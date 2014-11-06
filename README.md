@@ -13,3 +13,18 @@ The reason I created this boilerplate for angularJS : When I want to create a ne
 
 You can find other boilerplates under my github account at 
 	- https://github.com/wesleyduff
+
+*Get up and Running*
+
+	You might also want to install Grunt, Karma and maybe even Yoeman globally so you don't have to keep installing it for every project. You can do that with the following commands.
+
+	npm install -g grunt-cli
+
+	npm install -g karma-cli
+
+	The "cli" suffix is the package that allows grunt and karma to called directly from the command line in Windows. The -g parameter tells NPM you want to install the package globally.
+
+Once you have installed grunt and karma 
+
+	npm install
+
