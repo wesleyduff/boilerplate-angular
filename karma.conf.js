@@ -17,7 +17,9 @@ module.exports = function(config) {
     files: [
       'vendor/angular-1.3.1.min.js',
       'vendor/angular-mocks.js',
-      'tests/specs/*.js'
+      'tests/specs/*.js',
+      'scripts/*.js',
+      'scripts/**/*.js'
     ],
 
 
@@ -52,7 +54,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
 
     // start these browsers
