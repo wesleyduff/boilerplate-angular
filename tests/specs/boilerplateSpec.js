@@ -9,7 +9,7 @@ describe("Expenses Controller", function(){
         $controller('MainController', {$scope: $scope});
     }));
     
-    it('should have three epense items', function() {
+    it('Should have one items', function() {
         expect($scope.boilerplate.length).toBe(1);
     });
     
