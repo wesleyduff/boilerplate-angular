@@ -3,7 +3,8 @@
 Get started quick with angularJS.
 
 	- clone repository into your local folder
-	- install NPM modules (details below), if you do not already have them installed globally.
+	- install NPM modules (details below), if you do not already have them installed globally
+		- install npm modules by envoking npm install.
 	- run tests to prove everything is working
 		- $ grunt test
 	- run gulp to package everything up for production.
@@ -15,7 +16,7 @@ You can find other boilerplates under my github account at
 
 *Get up and Running*
 
-	You might also want to install Grunt, Karma and maybe even Yoeman globally so you don't have to keep installing it for every project. You can do that with the following commands.
+	You might also want to install Grunt and Karma globally so you don't have to keep installing it for every project. You can do that with the following commands.
 
 	npm install -g grunt-cli
 
@@ -23,7 +24,18 @@ You can find other boilerplates under my github account at
 
 	The "cli" suffix is the package that allows grunt and karma to called directly from the command line in Windows. The -g parameter tells NPM you want to install the package globally.
 
-Once you have installed grunt and karma 
+Once you have installed grunt and karma or if you decided to skip the global install
 
-	npm install
+	$ npm install
+
+	- this will install all the dependencies to your machine.
+
+	$ grunt
+
+	- this will run the default grunt task
+		- watches all of your sass files and compile them to css when you save.
+		- watches all of your .js files and runs tests via karma when you save a .js file.
+
+Review the gruntfile.js to view the other tasks that can be completed.
+
 
