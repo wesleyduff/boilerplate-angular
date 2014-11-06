@@ -6,7 +6,7 @@ Get started quick with angularJS.
 	- install NPM modules (details below), if you do not already have them installed globally
 		- install npm modules by envoking npm install.
 	- run tests to prove everything is working
-		- $ grunt test
+		- $ grunt
 	- run gulp to package everything up for production.
 		- $ gulp
 
