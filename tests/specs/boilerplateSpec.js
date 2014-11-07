@@ -2,7 +2,16 @@ describe("Expenses Controller", function(){
     
     var $scope;
     
-    beforeEach(module("app"));
+    beforeEach(function(){
+    	module("app");
+    	module(function($provide){
+    		$provide.value('firebaseFactory', {
+    			init: function(){
+    				return {};
+    			}
+    		});
+    	});
+    });
     
     beforeEach(inject(function($rootScope, $controller) {
         $scope = $rootScope.$new();
@@ -12,6 +21,5 @@ describe("Expenses Controller", function(){
     it('Should have one items', function() {
         expect($scope.boilerplate.length).toBe(1);
     });
-    
     
 });
