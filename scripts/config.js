@@ -17,6 +17,11 @@ window.config = window.config || {
 //turn on or off debugging
 window.config.add('debug', true); //set to false to turn off debugging logs
 
-window.config.add('googleClientId', '684961735644-bionqsdul2b7d8mfd8o16cm5f0nt2212.apps.googleusercontent.com');
+/*
+NOTE *
+Moving all login etc.. over to OAuth 2.0
+*/
 
-window.config.add('facebookAppId', '1505800903037749');
+window.config.add('googleClientId', 'YOUR GOOGLE CLIENT ID');
+
+window.config.add('facebookAppId', 'YOUR FACEBOOK APP ID');

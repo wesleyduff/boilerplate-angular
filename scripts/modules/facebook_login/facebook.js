@@ -33,6 +33,28 @@
 	.provider('Facebook', [
 		function(){
 
+			/*
+			* Facebook App Id
+			* @type {Number}
+			*/
+			settings.appId = window.config.get('facebookAppId');
+
+			/**
+	         * Set if you want to check the authentication status
+	         * at the start up of the app
+	         * @type {Boolean}
+	         */
+	        settings.status = true;
+
+	        this.setStatus = function(status) {
+	          settings.status = status;
+	        };
+
+	        this.getStatus = function() {
+	          return settings.status;
+	        };
+
+
 		}
 	]);
 

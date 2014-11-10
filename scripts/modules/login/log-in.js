@@ -1,4 +1,4 @@
-var login_module = angular.module('login', [])
+var login_module = angular.module('login', ['facebook'])
 
 /* 
 Create the google sign in directive
