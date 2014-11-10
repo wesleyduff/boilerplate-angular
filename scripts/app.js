@@ -1,9 +1,11 @@
 /* Angular APP entry Point */
-var app = angular.module("app", ["firebase", "OAuth"])
+var app = angular.module("app", ['firebase', 'OAuthModule'])
 
-.config(function(OAuthProvider){
-
-	//Visit https://oauth.io to create an account and gain access to your API key
-	OAuthProvider.init('YOUR_APP_ID');
-
-});
+.config(["OAuthServiceProvider", function(OAuthServiceProvider) {
+	/*
+	* Params 
+	* TYPE {String} : https://oauth.io/ to get your api key
+	* TYPE {Boolean} : Set to true to dynamically load OAuth.js or else set it to false and load it yourself manually
+	*/
+	OAuthServiceProvider.addAppId('<YOUR API KEY GOES HERE>', true);
+}]);
