@@ -16,5 +16,7 @@ window.config = window.config || {
 
 //turn on or off debugging
 window.config.add('debug', true); //set to false to turn off debugging logs
-//Add your security key
+
 window.config.add('googleClientId', '684961735644-bionqsdul2b7d8mfd8o16cm5f0nt2212.apps.googleusercontent.com');
+
+window.config.add('facebookAppId', '1505800903037749');

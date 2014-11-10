@@ -1,7 +1,4 @@
-'use strict';
-
-app //get the angular app module for our application
-
+var login_module = angular.module('login', [])
 
 /* 
 Create the google sign in directive
@@ -18,7 +15,7 @@ Step 5: Handle the sign in with a JavaScript callback.
 .directive('googleSignIn', function(){
 	return {
 		restrict : "AE",
-		templateUrl: '../../templates/google_sign_in.html',
+		templateUrl: 'templates/google_sign_in.html',
 		scope: {},
 		replace: true,
 		transclude: true,
@@ -81,7 +78,7 @@ Step 5: Handle the sign in with a JavaScript callback.
 .directive('facebookSignIn', function(){
 	return {
 		restrict : "AE",
-		templateUrl: "../../templates/facebook_sign_in.html",
+		templateUrl: "templates/facebook_sign_in.html",
 		link: function(scope, element, attrs){
 			//perform work
 		}
@@ -91,7 +88,7 @@ Step 5: Handle the sign in with a JavaScript callback.
 .directive('customSignIn', function(){
 	return {
 		restrict: "AE",
-		templateUrl: "../../templates/custom_sign_in.html",
+		templateUrl: "templates/custom_sign_in.html",
 		link: function(scope, element, attrs){
 			//peform work
 		}
