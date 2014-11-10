@@ -38,4 +38,11 @@ Once you have installed grunt and karma or if you decided to skip the global ins
 
 Review the gruntfile.js to view the other tasks that can be completed.
 
+================
+
+Google Signing : Auth
+
+https://developers.google.com/+/web/signin/add-button
+
+
 

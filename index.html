@@ -12,16 +12,29 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     </head>
     <body data-ng-app="app">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <!-- Rmove this if you do not want to include any login features -->
+        <div id="login-slide" data-ng-include src="'templates/login.html'"></div>
+
+
         <!-- Add your site or application content here -->
         <nav>
             <ul>
                 <li>Nav links</li>
+            </ul>
+            <ul>
+                <li>
+                    <!-- Allow this to call the slide out to 
+                    allow our user to sign in
+                    -->
+                    <a href="#log-in">Log in</a>
+                </li>
             </ul>
         </nav>
         <main data-ng-controller="MainController"x>
@@ -29,15 +42,18 @@
             </section>
         </main>
 
+
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/firebase/firebase.js"></script>
         <script src="bower_components/angularfire/dist/angularfire.js"></script>
         <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
         
 
-        <script src="scripts/main.js"></script>
+        <script src="scripts/config.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/firebaseFactory.js"></script>
         <script src="scripts/controllers/mainController.js"></script>
+        <script src="scripts/directives/log-in.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
