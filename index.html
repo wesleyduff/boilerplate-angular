@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" data-ng-app="app">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +14,14 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     </head>
-    <body data-ng-app="app">
+    <body data-ng-controller="MainController">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Rmove this if you do not want to include any login features -->
-        <div id="login-slide" data-ng-include src="'templates/login.html'"></div>
+        <div id="login-slide" data-ng-include src="'templates/login.html'">
+        </div>
 
 
         <!-- Add your site or application content here -->
@@ -35,9 +36,12 @@
                     -->
                     <a href="#log-in">Log in</a>
                 </li>
+                <li>
+                    Hello {{user.name}}
+                </li>
             </ul>
         </nav>
-        <main data-ng-controller="MainController"x>
+        <main>
             <section>
             </section>
         </main>
@@ -52,6 +56,8 @@
         <script src="scripts/config.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/modules/OAuth_login/OAuth_login.js"></script>
+        <script src="scripts/directives/OAuth_directive.js"></script>
+        <script src="scripts/services/OAuthFactory.js"></script>
         <script src="scripts/services/firebaseFactory.js"></script>
         <script src="scripts/controllers/mainController.js"></script>
         

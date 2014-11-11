@@ -7,5 +7,5 @@ var app = angular.module("app", ['firebase', 'OAuthModule'])
 	* TYPE {String} : https://oauth.io/ to get your api key
 	* TYPE {Boolean} : Set to true to dynamically load OAuth.js or else set it to false and load it yourself manually
 	*/
-	OAuthServiceProvider.addAppId('<YOUR API KEY GOES HERE>', true);
+	OAuthServiceProvider.addAppId('5i6jjRTYhHHMAwqCb3qsAqyRcVY', true);
 }]);

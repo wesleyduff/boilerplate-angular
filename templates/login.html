@@ -1,3 +1,12 @@
-<span google-sign-in></span>
-<div facebook-sign-in></div>
-<div custom-sign-in></div>
+<ul>
+    <li class="google">Google</li>
+    <li ng-click="$emit('facebookLoginClick', 'load')" class="facebook">Facebook</li>
+    <li class="custom">
+        <label for="email">Email</label>
+        <input id="email" type="text" placeholder="email"/>
+        <label for="password">Password</label>
+        <inpyt type="password" id="password" placeholder="password" />
+        <input type="password" id="passwordMatch" placeholder="repeat password"/>
+        <input type="submit" value="submit"/>
+    </li>
+</ul>
